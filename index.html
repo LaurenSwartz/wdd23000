@@ -12,15 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="week01/styles/base.css">
     <link rel="stylesheet" href="week01/styles/larger.css">
+    <link rel="stylesheet" href="week01/styles/normalize.css">
     <link rel="icon"  href="favicon.ico">
+    <meta property="og:title" content="Web Frontend Development assignment portal"> 
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517859863896-7417ce1c71fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60">
+    <meta property="og:url" content="https://laurenswartz.github.io/wdd230/">
 </head>
 <body>
-    <header>
+    <header>    
     <img src="week01/images/IMG_3069.jpg" alt="Lauren Swartz profile" width="50" height="64">
+    <div id="mode">
+     ☑️   
+    </div>
     <h1>Lauren Swartz</h1>
     </header>
+    <a id="menu" href="#"></a>
     <nav>
-        <ul>
+        <ul class="navigation">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
@@ -55,6 +64,7 @@
         <p id="lastModified">Last Modified</p>
     </footer>
 <script src="week01/scripts/getDates.js"></script> 
-<script src="week01/scripts/hamburger.js"></script>    
+<script src="week01/scripts/hamburger.js"></script>  
+<script src="week01/scripts/darkmode.js"></script>  
 </body>
 </html>

@@ -194,3 +194,9 @@ h3{
 	font-size: 3rem;
 	cursor: pointer;
 }
+#weather-icon {
+	float: left;
+}
+div.weather {
+	padding: 50px
+}

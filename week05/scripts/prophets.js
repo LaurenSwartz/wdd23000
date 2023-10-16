@@ -15,7 +15,7 @@ const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         // create elements to add to the div.cards element
         let card = document.createElement('section');
-        let h2 = document.createElement('h2');
+        let h2 = document.createElement('h3');
         let h3 = document.createElement('h3');
         let p = document.createElement('p');
         let portrait = document.createElement('img');

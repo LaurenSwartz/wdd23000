@@ -1,18 +1,18 @@
 const url = 'https://laurenswartz.github.io/wdd230/chamber/data/members.json';
 
-async function getProphetData(){
+async function getMemberData(){
     const response = await fetch(url);
     const data = await response.json();
     //console.table(data.prophets);
-    displayProphets(data.prophets);
+    displayMembers(data.members);
 }
 
-getProphetData();
+getMemberData();
 
-const displayProphets = (prophets) => {
-    const cards = document.querySelector('article.mani-grid');
+const displayMembers = (members) => {
+    const cards = document.querySelector('article.direct-grid');
 
-    prophets.forEach((prophet) => {
+    members.forEach((member) => {
         // create elements to add to the div.cards element
         let card = document.createElement('section');
         let portrait = document.createElement('img');
@@ -23,14 +23,14 @@ const displayProphets = (prophets) => {
         
 
         // Build the h2 content out to show the prophets full name - finish the template string
-        h2.textContent =`${prophet.name}`;
-        h3.textContent =`Address: ${prophet.address}`;
-        p.textContent =`Phone Number: ${prophet.phonenumber}`;
-        url.textContent = `${prophet.websiteurl}`;
+        h2.textContent =`${member.name}`;
+        h3.textContent =`Address: ${member.address}`;
+        p.textContent =`Phone Number: ${member.phonenumber}`;
+        url.textContent = `${member.websiteurl}`;
 
         //Build the image portrait by setting all the relevant attributes
-        portrait.setAttribute('src',prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name}Joseph Smith`);
+        portrait.setAttribute('src',member.imageurl);
+        portrait.setAttribute('alt', `Portrait of ${member.name}Joseph Smith`);
         portrait.setAttribute('loading','lazy');
         portrait.setAttribute('width','340');
         portrait.setAttribute('height','440');
